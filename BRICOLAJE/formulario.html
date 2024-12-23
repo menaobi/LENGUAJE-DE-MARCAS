@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    label {font-family: Arial, Helvetica, sans-serif; font-size: 18px;}
+    body {background-color: antiquewhite;}
+    h1 {font-family: Arial, Helvetica, sans-serif;font-size: 25px;color: brown;}
+
+</style>
+</head>
+<body>
+    <h1>Formulario de información</h1>
+    <form post="formulario.php">
+        <fieldset>
+            <legend>Sus Datos</legend>
+            <p>
+            <label for="">Nombre y Apellidos: </label>
+            <input type="text" maxlength="50" name="nombre"  required
+            id="nom">
+            </p>
+
+        <p>
+            <label for="contrase">Contraseña </label>
+            <input type="password" maxlength="8" name="Contraseña"
+            id="contrase">
+        </p>
+
+        <p>
+            <label for="usuario">Usuario: </label>
+            <input type="text" maxlength="8" name="Contraseña"
+            id="contrase" disabled placeholder="anonimo">
+        </p>
+    
+        <p> Nivel:</p>
+           <p><label for="profesional"> Profesional: </label>
+            <input type="radio" value="p" id="hombre" 
+            name="nivel">
+            
+        <p><label for="avanzado">Avanzado:</label>
+            <input type="radio" value="a" checked id=""avanzado" 
+            name="nivel">
+        </p>
+
+        <p><label for="principiante">Principiante:</label>
+            <input type="radio" value="pr" id=""principiante" 
+            name="nivel">
+        </p>
+    </fieldset>
+        <p>
+            <label for="nac">Nacionalidad:</label> 
+             <select name="nac" id="nac">
+                 <option value="es" selected>Española</option>
+                 <option value="ar">Armenia</option>
+                 <option value="gu">Guatemalteca</option>
+                 <option value="cu">Colombiana</option>
+                 <option value="to">Toledana</option>
+         
+             </select>
+        </p>
+
+        <label for="obs">Descripción:</label>
+            <textarea name="obs"
+            cols="40" rows="6"
+            id="obs"></textarea>
+
+            <p><label for="ofertas">Deseo recibir información sobre novedades y ofertas:</label>  
+            <input type="checkbox" checked name="ofertas"
+            id="ofertas"></p>
+                
+            <p><label for="ofertas">Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre la protección de datos</label>  
+                <input type="checkbox"name="ofertas"
+                id="ofertas"></p>
+            <p>
+                <label for="foto">Adjuntar foto:</label>
+                <input type="file" name="foto"
+                id="foto">
+            </p>
+
+            <p>
+                <input type="submit"value:"Enviar">
+                <input type="reset" 
+                value="Borrar datos">
+            
+            </p>
+            </form>
+
+<!--hasta aqui-->
+        
