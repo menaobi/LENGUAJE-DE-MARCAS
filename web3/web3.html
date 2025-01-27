@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web mena</title>
+
+    <style>
+* {font-family: Arial, Helvetica, sans-serif;
+         box-sizing: border-box;
+         margin: 0;}
+header {
+            background-image: url(gatos.jpg); 
+            height: 500px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;}
+#titular h1 {
+            color: white;
+            text-shadow: 3px 3px 5px black; font-size: 3em;
+            align-items: center;
+            font-size:5em;
+        }
+    
+    nav {
+        background-color: green;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+    }
+    nav a:hover {
+        color: black
+    }
+    #contenedor-quienes {
+        display: flex;
+        }
+        section#quienesomos {
+            padding: 20px;}
+    #contenedor-quienes #izquierda {width: 50%;}
+    #contenedor-quienes #derecha {width: 40%; text-align: center;}
+    #contenedor-quienes #izquierda img {width: 80%;}
+    .titulo {   
+        color: green;
+        text-align: center;
+    }
+    section #quienes-somos {background-color: blanchedalmond;}
+    section #nuestros-clientes {background-color: aqua;}
+
+
+
+       section#nuestros-clientes{
+       display: flex;
+       flex-wrap: wrap;
+        padding: 20px;
+       justify-content: space-around;
+       }
+
+       section#nuestros-clientes .cliente {
+    text-align: center; 
+    margin: 10px; 
+}
+
+
+       section#nuestros-clientes img{
+        border-radius: 50%;
+        height: 300px; 
+        height: 300px; 
+    width: 200px; 
+    margin-bottom: 10px; 
+       }
+
+       section#nuestros-clientes h4 {
+        align-items:end;
+        font-style: italic;
+       }
+       .titulo  {
+        color: green;
+        align-items: center;
+    }
+
+    footer {
+    background-color: grey;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+   }
+
+   footer #caja-superior {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid white;
+    padding: 10px;
+   }
+   footer .caja-inferior {
+    width: 33%;
+    padding: 10px;
+    box-sizing: border-box;
+   }
+
+   footer a {
+    display: block; 
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div id=titular>
+          <h1>Mena Eventos </h1>
+         <h2>Tu rincón preferido</h2>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Quienes somos</a>
+        <a href="#">Obras</a>
+        <a href="#">Contacto</a>
+
+
+    </nav>
+
+    <section id="quienes-somos">
+        <h1 class="titulo">
+            Quienes somos
+        </h1>
+
+
+       <div id="contenedor-quienes">
+        <div id="izquierda">
+            <img src="gente.jpg" alt="">
+        </div>
+        
+        
+        <div id="derecha">
+                <h1>Un equipo multidisciplinar y profesional</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit hic pariatur quae, commodi porro mollitia quibusdam tempore consequatur expedita perferendis quaerat error eligendi asperiores assumenda debitis, earum reiciendis necessitatibus quos?
+                Quis iure sed porro hic, optio cum. Veniam dolorem distinctio repellat amet quidem dignissimos, dicta ipsum, neque, dolor ratione alias optio animi. Tempore architecto aut iure doloribus beatae aliquam nemo.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat perspiciatis explicabo quasi ducimus, cumque optio repudiandae consequuntur facilis. Modi quo consectetur fuga fugit. Asperiores corporis et necessitatibus sed laudantium harum.
+                    Id neque inventore fuga, molestiae quo excepturi unde earum quaerat numquam eaque odio rerum dicta ipsam, amet tenetur totam deserunt adipisci ut saepe modi maiores eveniet quae? Minus, vel nulla.</p>
+            </div>
+
+
+        </div>
+        <section id="nuestros-clientes">
+            <h2 class="titulo">
+             Lo dicen nuestros clientes:
+         </h2>
+
+         <div class="cliente">
+         <img src="jose.jpg" alt="">
+        <h4>"Mena Eventos es la solución para mi empresa"</h4>
+        </div>
+
+        <div class="cliente">
+         <img src="gato.jpg" alt="">
+         <h4>"Es ideal para gatos"</h4>
+        </div>
+
+        <div class="cliente">
+         <img src="chinas.jpg" alt="">
+         <h4>"perfecto para grandes eventos tanto en el interior como en el exterior"</h4>
+        </div>
+        </section>
+         <footer>
+            <p id="caja-superior">Contacte con nosotros. trabajamos los 365 dias del año</p>
+            <div class="caja-inferior">
+                <h2>Enlaces</h2>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href=#">Instagram</a>
+            </div>
+    
+            <div class="caja-inferior">
+                <h2>Estamos en</h2>
+            <p>Avenida Constitucion</p>
+            <p>45710 Madridejos</p>
+            </div>
+    
+            <div class="caja-inferior">
+                <h2>Email</h2>
+               <p>menamorales87@gmail.com</p>
+            </div>
+        </footer>
+</body>
+</html>
