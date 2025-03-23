@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Estilo</title>
+    <script>
+        function cambiarEstilo() {
+            // Cambiar el tamaño del texto del h1
+            document.getElementById("titulo").style.fontSize = "50px";
+            // Cambiar el color de fondo del h1
+            document.getElementById("titulo").style.backgroundColor = "yellow";
+            // Cambiar el texto del botón
+            document.getElementById("boton").innerText = "Botón pulsado";
+        }
+    </script>
+</head>
+<body>
+    <!-- Título h1 -->
+    <h1 id="titulo">Título Original</h1>
+    <!-- Botón para cambiar el estilo -->
+    <button id="boton" onclick="cambiarEstilo()">Pulsar para cambiar estilo</button>
+</body>
+</html>

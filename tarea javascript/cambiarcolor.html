@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar color de fondo</title>
+    <style>
+
+        #capa {
+            width: 100%;
+            height: 100px; /* Altura fija para la capa */
+            background-color: red; /* Color inicial rojo */
+        }
+    </style>
+</head>
+<body>
+
+
+    <div id="capa"></div>
+
+  
+    <label for="colorSelect">Color:</label>
+    <select id="colorSelect" onchange="cambiarColor()">
+        <option value="red" selected>Rojo</option>
+        <option value="green">Verde</option>
+        <option value="yellow">Amarillo</option>
+        <option value="blue">Azul</option>
+    </select>
+
+    <script>
+
+        function cambiarColor() {
+       
+            var colorSeleccionado = document.getElementById("colorSelect").value;
+           
+            document.getElementById("capa").style.backgroundColor = colorSeleccionado;
+        }
+    </script>
+
+</body>
+</html>

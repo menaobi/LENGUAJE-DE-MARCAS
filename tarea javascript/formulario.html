@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Formulario de Registro</h2>
+    
+    <form id="formulario" onsubmit="return validarFormulario()">
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" name="usuario" required><br><br>
+
+        <label>
+            <input type="checkbox" id="acepto" name="acepto">
+            He leído y acepto las condiciones
+        </label><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <p id="error" class="error"></p>
+
+    <script>
+        function validarFormulario() {
+            // Obtener los valores de los campos
+            var usuario = document.getElementById("usuario").value;
+            var acepto = document.getElementById("acepto").checked;
+            var error = document.getElementById("error");
+
+            // Validar que el usuario tenga al menos 5 caracteres
+            if (usuario.length < 5) {
+                error.textContent = "El nombre de usuario debe tener al menos 5 caracteres.";
+                return false; // Evita que el formulario se envíe
+            }
+
+            // Validar que el checkbox esté marcado
+            if (!acepto) {
+                error.textContent = "Debes aceptar las condiciones para continuar.";
+                return false; // Evita que el formulario se envíe
+            }
+
+            // Si todo está correcto, se puede enviar el formulario
+            error.textContent = "";
+            return true;
+        }
+    </script>
+
+</body>
+</html>

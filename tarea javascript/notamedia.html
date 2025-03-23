@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nota media</title>
+        <style>
+            * {background-color: blue;}
+        </style>
+    </head>
+    <body>
+        <button onclick="notamedia()">Calcular Media</button>
+        <script type="text/javascript">
+            function notamedia(){
+                let suma = 0;
+                let nota;
+                let numNotas = 4;  // Establecemos que siempre se pedirán 4 notas
+                
+                for (let i = 1; i <= numNotas; i++) {
+                    nota = parseInt(prompt("Dime la nota " + i));  // Pedimos cada una de las 4 notas
+                    suma = suma + nota;  // Sumamos la nota a la suma total
+                }
+    
+                let media = suma / numNotas;  // Calculamos la media
+                alert("La media es " + media);  // Mostramos la media
+            }
+        </script>
+    </body>
+    </html>
