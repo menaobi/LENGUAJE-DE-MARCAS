@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom y Javascript</title>
+    <style>
+        #caja { border:3px solid blue;padding: 20px; width: 300px;}
+
+
+    </style>
+    <script>
+        function cambiaTitulo(){
+            var titulo =
+            document.getElementById("titulo");
+            if (titulo.innerHTML=="Titulo inicial") {
+            titulo.innerHTML="Nuevo titulo";
+          } else {
+                titulo.innerHTML="Titulo inicial";
+          }
+          document.getElementById("caja").innerHTML="Nuevo contenido";
+
+        }
+        function cambiaAnchoImagen() {
+            var imagen=document.getElementById("imagen");
+            imagen.width = imagen.width + 100;
+        }
+        function cambiaSrc() {
+            document.getElementById("imagen").src="zelda2.jpg"
+
+        }
+        function cambiaCaja(){
+            var caja = document.getElementById("caja");
+            caja.style.width = "500px";
+            caja.style.backgroundColor="lightgreen";
+            caja.style.fontSize = "50px"
+            caja.style.color = "red"; 
+        }
+    </script>
+</head>
+<body>
+<h1 id="titulo">Titulo inicial</h1>
+<div id="caja">Contenido caja</div>
+<img id="imagen" src="zelda.jpg" width="200" height="300" alt="imagen del videojuego Zelda">
+<br>
+<button onclick="cambiaTitulo()">Cambiar título</button>
+<button onclick="cambiaAnchoImagen()">Cambia ancho imagen</button>
+<button onclick="cambiaSrc()">Cambia imagen</button>
+<button onclick="cambiaCaja()">Cambia caja</button>
+</body>
+</html>
