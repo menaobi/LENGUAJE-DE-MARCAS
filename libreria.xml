@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libreria [
+  <!ELEMENT libreria (codigo, direccion, telefono, propietario, libro+)>
+
+  <!ELEMENT codigo (#PCDATA)>
+  <!ELEMENT direccion (#PCDATA)>
+  <!ELEMENT telefono (#PCDATA)> 
+
+  <!ELEMENT propietario (nombre, telefono*)>
+  <!ELEMENT nombre (#PCDATA)>
+
+  <!ELEMENT libro (titulo, autor, publicacion?, precio?, cantidad?)>
+  <!ATTLIST libro
+    formato (Rústica | Tapa-Blanda | Tapa-Dura) #REQUIRED
+  >
+
+  <!ELEMENT titulo (#PCDATA)>
+  <!ELEMENT autor (#PCDATA)>
+  <!ELEMENT publicacion (#PCDATA)>
+  <!ELEMENT precio (#PCDATA)>
+  <!ELEMENT cantidad (#PCDATA)>
+]>
+
+<libreria>
+  <codigo>1263</codigo>
+  <direccion>Juan de Juni, 31</direccion>
+  <telefono>983555555</telefono>
+  <propietario>
+    <nombre>Juanito</nombre>
+    <telefono>656222111</telefono>
+  </propietario>
+  <libro formato="Rústica">
+    <titulo>Cien años de soledad</titulo>
+    <autor>Gabriel García Márquez</autor>
+    <publicacion>1967</publicacion>
+    <precio>23.5</precio>
+  </libro>
+  <libro formato="Tapa-Blanda">
+    <titulo>El rapto de las Sabinas</titulo>
+    <autor>Francisco García Pavón</autor>
+    <publicacion>1971</publicacion>
+    <precio>25</precio>
+  </libro>
+</libreria>

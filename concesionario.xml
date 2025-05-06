@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE concesionarios [
+  <!ELEMENT concesionarios (concesionario+)>
+
+  <!ELEMENT concesionario (datos_contacto, vehiculos)>
+  
+  <!ELEMENT datos_contacto (nombre, direccion, poblacion, telefono+)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT direccion (#PCDATA)>
+  <!ELEMENT poblacion (#PCDATA)>
+  <!ELEMENT telefono (#PCDATA)>
+  
+  <!ELEMENT vehiculos (vehiculo*)>
+
+  <!ELEMENT vehiculo (modelo, cilindrada, color, asegurado?)>
+  <!ATTLIST vehiculo
+    matricula ID #REQUIRED
+    tipo (turismo | furgoneta) "turismo"
+    combustible (Gasolina | Diesel) #REQUIRED
+  >
+  
+  <!ELEMENT modelo (#PCDATA)>
+  <!ELEMENT cilindrada (#PCDATA)>
+  <!ELEMENT color (#PCDATA)>
+  <!ELEMENT asegurado EMPTY>
+]>
+
+<concesionarios>
+  <concesionario>
+    <datos_contacto>
+      <nombre>AutoMadrid</nombre>
+      <direccion>Calle Mayor 123</direccion>
+      <poblacion>Madrid</poblacion>
+      <telefono>911234567</telefono>
+      <telefono>918765432</telefono>
+    </datos_contacto>
+    <vehiculos>
+     <vehiculo matricula="m1234ABC" tipo="turismo" combustible="Gasolina">
+        <modelo>Ford Fiesta</modelo>
+        <cilindrada>1200</cilindrada>
+        <color>Rojo</color>
+        <asegurado/>
+      </vehiculo>
+      <vehiculo matricula="m5678DEF" tipo="furgoneta" combustible="Diesel">
+        <modelo>Renault Kangoo</modelo>
+        <cilindrada>1500</cilindrada>
+        <color>Blanco</color>
+      </vehiculo>
+    </vehiculos>
+  </concesionario>
+</concesionarios>

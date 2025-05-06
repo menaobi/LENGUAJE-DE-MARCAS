@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pedido>
+<pedido>
+<destinatario dni="454545a">
+    <nombre>Juan</nombre>
+    <apellido1>Delgado</apellido1>
+    <apellido2>Martinez</apellido2>
+</destinatario>
+<articulo codigo="A2023">
+    bicicleta</descripcion_articulo>
+    <codigo_articulo>A2023</codigo_articulo>
+</articulo>
+<direccion_entrega>
+    <calle>Barco</calle>
+    <numero>4</numero>
+    <piso>tercer piso, letra A</piso>
+</direccion_entrega>
+<fecha_entrega>19-05-2000</fecha_entrega>
+
+</pedido>

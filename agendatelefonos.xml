@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE agenda>
+<agenda>
+  <persona>
+  <nombre></nombre>
+  <apellidos></apellidos>
+  <direccion></direccion>
+  <telefonos>
+      <telefono_casa></telefono_casa>  
+      <telefono_movil></telefono_movil>
+      <telefono_trabajo></telefono_trabajo>
+  
+  </telefonos>
+</persona>
+
+</agenda>

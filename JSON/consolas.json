@@ -1,0 +1,9 @@
+{
+    "marca": "Nintendo",
+    "modelo": "Switch",
+    "precio": 275,
+    "grafica": "Nvidia Tegra custom",
+    "so": "NSO",
+    "stock": true,
+    "conexiones": ["USB-C", "HDMI", "Bluetooth", "WiFi 6"]
+  }

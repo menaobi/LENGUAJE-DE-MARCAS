@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Formulario de Portátil</h2>
+
+    <form>
+      <label>Marca: <input type="text" id="marca"></label><br><br>
+      <label>Modelo: <input type="text" id="modelo"></label><br><br>
+      <label>Precio: <input type="text" id="precio"></label><br><br>
+      <label>Grafica: <input type="text" id="grafica"></label><br><br>
+      <label>Sistema Operativo: <input type="text" id="so"></label><br><br>
+      <label>
+        En stock:
+        <input type="checkbox" id="stock">
+      </label><br><br>
+      <label>Conexiones: <input type="text" id="conexiones"></label><br><br>
+    </form>
+  
+    <script>
+      fetch('consolas.json')
+        .then(response => response.json())
+        .then(consolas => {
+          document.getElementById("marca").value = consolas.marca;
+          document.getElementById("modelo").value = consolas.modelo;
+          document.getElementById("precio").value = consolas.precio;
+          document.getElementById("grafica").value = consolas.grafica;
+          document.getElementById("so").value = consolas.so;
+  
+          if (consolas.stock) {
+            document.getElementById("stock").setAttribute("checked", "checked");
+          }
+  
+          document.getElementById("conexiones").value = consolas.conexiones.join(", ");
+        });
+    </script>
+</body>
+</html>

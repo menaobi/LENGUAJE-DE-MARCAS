@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pedido>
+  <fecha>2025-04-14</fecha>
+  <hora>15:30:45</hora>
+
+  <usuario>
+    <nombre_usuario>juan123</nombre_usuario>
+    <nombre_completo>Juan Pérez López</nombre_completo>
+    <direccion_envio>
+      <calle>Calle Mayor, 45</calle>
+      <poblacion>Madrid</poblacion>
+      <codigo_postal>28013</codigo_postal>
+    </direccion_envio>
+  </usuario>
+
+  <articulos>
+    <articulo>
+      <codigo>ART001</codigo>
+      <descripcion>Camisa azul/descripcion>
+      <precio>29.99</precio>
+    </articulo>
+    <articulo>
+      <codigo>ART002</codigo>
+      <descripcion>Pantalón vaquero</descripcion>
+      <precio>49.95</precio>
+    </articulo>
+    <articulo>
+      <codigo>ART003</codigo>
+      <descripcion>Deportivas</descripcion>
+      <precio>65.00</precio>
+    </articulo>
+  </articulos>
+</pedido>
